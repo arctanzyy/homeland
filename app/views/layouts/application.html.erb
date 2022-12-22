@@ -23,10 +23,11 @@
     <meta name="apple-mobile-web-app-capable" content="no">
     <meta content='True' name='HandheldFriendly'>
     <link rel="alternate" type="application/rss+xml" title="Subscribe" href="<%= main_app.feed_topics_url %>">
-    <%= stylesheet_pack_tag "front", "data-turbolinks-track": "reload" %>
-    <%= stylesheet_pack_tag "turbolinks-app", 'data-turbolinks-track': 'reload' if turbolinks_app? %>
+    <%= vite_client_tag %>
+    <%= vite_stylesheet_tag "front", "data-turbolinks-track": "reload" %>
+    <%= vite_stylesheet_tag "turbolinks-app", 'data-turbolinks-track': 'reload' if turbolinks_app? %>
     <%= yield :stylesheets %>
-    <%= javascript_pack_tag "application",  defer: false %>
+    <%= vite_javascript_tag "application",  defer: false %>
     <%= yield :javascripts %>
     <%= action_cable_meta_tag %>
     <%= csrf_meta_tag %>

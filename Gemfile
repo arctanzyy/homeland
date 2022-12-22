@@ -8,7 +8,6 @@ gem "jbuilder"
 gem "rails", "~> 7.0"
 gem "rails_autolink"
 gem "sass-rails"
-gem "shakapacker"
 gem "turbolinks"
 gem "uglifier"
 
@@ -113,3 +112,5 @@ group :development, :test do
 
   gem "standard"
 end
+
+gem "vite_rails", "~> 3.0"

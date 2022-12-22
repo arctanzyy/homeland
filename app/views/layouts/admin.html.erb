@@ -3,15 +3,16 @@
   <head>
     <meta name="theme" content="<%= user_theme %>">
     <title><%= Setting.app_name %> - Admin Panel</title>
-    <%= stylesheet_pack_tag "admin" %>
-    <%= javascript_pack_tag "application", defer: false %>
+    <%= vite_client_tag %>
+    <%= vite_stylesheet_tag "admin" %>
+    <%= vite_javascript_tag "application", defer: false %>
     <%= csrf_meta_tag %>
   </head>
   <body>
     <div class="header">
       <div class="header navbar navbar-expand flex-md-row bd-navbar">
         <div class="container mx-auto sm:flex">
-          <div class="navbar-header hidden md:flex items-center" data-turbolinks-permanent>
+          <div class="items-center hidden navbar-header md:flex" data-turbolinks-permanent>
             <%= link_to("Admin Panel", main_app.admin_root_path, class: "navbar-brand") %>
           </div>
           <div class="navbar-nav-scroll">

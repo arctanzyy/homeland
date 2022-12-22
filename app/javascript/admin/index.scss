@@ -1,6 +1,6 @@
-@import "homeland/application.tailwind";
-@import "~homeland/index";
-@import "~homeland/dark-mode";
+@import "~/homeland/application.tailwind";
+@import "~/homeland/index";
+@import "~/homeland/dark-mode";
 
 body,
 p,
@@ -75,7 +75,7 @@ pre {
 }
 
 .toolbar {
-  @apply mb-4 flex gap-4;  
+  @apply mb-4 flex gap-4;
 }
 
 .toolbar .form-inline {
