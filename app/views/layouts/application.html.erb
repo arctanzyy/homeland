@@ -68,13 +68,13 @@
     <%= render AlertComponent.new %>
     <%= content_for?(:main) ? yield(:main) : yield %>
   </div>
-#  <% if !mobile? %>
+  <% if true? %>
     <footer class="footer" id="footer" data-turbolinks-permanent>
       <div class="container mx-auto">
         <%= raw Setting.footer_html %>
       </div>
     </footer>
-#  <% end %>
+  <% end %>
   <% if mobile? %>
     <script type="text/javascript">
       App.mobile = true;
