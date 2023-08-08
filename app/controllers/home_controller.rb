@@ -29,7 +29,7 @@ class HomeController < ApplicationController
     render plain: "OK #{Time.now.iso8601}"
   end
 
-  def mainfest
+  def manifest
     render json: Setting.manifest.to_json
   end
 end
