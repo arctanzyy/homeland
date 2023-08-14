@@ -1,5 +1,5 @@
 # NAME:     homeland/homeland
-FROM registry.cn-shanghai.aliyuncs.com/felixi/docker:3.1.0-slim-buster
+FROM homeland/base:3.2-rc-slim-buster
 
 ENV RAILS_ENV "production"
 ENV RUBY_YJIT_ENABLE "true"
