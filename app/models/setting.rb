@@ -80,6 +80,7 @@ class Setting < RailsSettings::Base
     mailer_sender
     mailer_options
     manifest
+    topic_delete_second
   ]
 
   scope :basic do
@@ -191,6 +192,7 @@ class Setting < RailsSettings::Base
     field :newbie_limit_time, type: :integer, default: 0
     field :topic_create_limit_interval, type: :integer, default: 0
     field :topic_create_hour_limit_count, type: :integer, default: 0
+    field :topic_delete_second, type: :integer, default: 0
     field :sign_up_daily_limit, type: :integer, default: 0
 
     field :reject_newbie_reply_in_the_evening, default: "false", type: :boolean

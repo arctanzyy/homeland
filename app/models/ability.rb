@@ -64,8 +64,12 @@ class Ability
       can :create, Topic
     end
     can %i[favorite unfavorite follow unfollow], Topic
-    can %i[update open close], Topic, user_id: user.id
+    can %i[open close], Topic, user_id: user.id
     can :change_node, Topic, user_id: user.id, lock_node: false
+    can :update, Topic do |topic|
+      can_update = Setting.topic_delete_second == 0 ? true: ( topic.created_at.to_i + Setting.topic_delete_second > Time.now.to_i)
+      topic.user_id == user.id && can_update
+    end
     can :destroy, Topic do |topic|
       topic.user_id == user.id && topic.replies_count == 0
     end

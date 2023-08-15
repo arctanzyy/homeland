@@ -45,7 +45,8 @@ module ApplicationHelper
 
   def time_edit(time)
     return false if time.blank?
-    time.to_i +  (2 * 60 * 60) > Time.now.to_i
+    return true if Setting.topic_delete_second == 0
+    time.to_i +  Setting.topic_delete_second > Time.now.to_i
   end
 
   def title_tag(str, description: nil)

@@ -178,6 +178,7 @@ en:
       that then banned topic.
     topic_create_limit_interval: Topic create limit interval second. (0 no limit)
     topic_create_hour_limit_count: Limit number of topics create in 1 hour. (0 no limit)
+    topic_delete_second: Topic delete limit second after. (0 no limit)
     sign_up_daily_limit: Limit number of users register for each IP in every day. (0 no limit)
     use_recaptcha: Use Google reCaptcha as captcha provider.
     captcha_enable: Enable captcha.
