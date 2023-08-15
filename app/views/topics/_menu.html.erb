@@ -1,5 +1,5 @@
 <div class="dropdown-menu dropdown-menu-end">
-  <% if can?(:edit, @topic) %>
+  <% if (can?(:edit, @topic) && time_edit(@topic.created_at)) || can?(:manage, @topic) %>
     <%= link_to t("topics.menu.edit"), edit_topic_path(@topic), class: "dropdown-item", data: { prefetch: false }  %>
   <% end %>
   <% if can?(:close, @topic) %>
