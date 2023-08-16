@@ -17,6 +17,10 @@
 - [超级链接](http://github.com) - `[超级链接](http://github.com)`
 - [username@gmail.com](mailto:username@gmail.com) - `[username@gmail.com](mailto:username@gmail.com)`
 
+### 换行
+
+两个空格+回车 或 使用br标签
+
 ### 提及用户
 
 @foo @bar @someone ... 通过 @ 可以在发帖和回帖里面提及用户，信息提交以后，被提及的用户将会收到系统通知。以便让他来关注这个帖子或回帖。
@@ -67,24 +71,6 @@ _emphasize_    __strong__
 #### 语法高亮支持
 
 如果在 \`\`\` 后面更随语言名称，可以有语法高亮的效果哦，比如:
-
-##### 演示 Ruby 代码高亮
-
-```ruby
-class PostController < ApplicationController
-  def index
-    @posts = Post.last_actived.limit(10)
-  end
-end
-```
-
-##### 演示 Rails View 高亮
-
-```erb
-<%= @posts.each do |post| %>
-<div class="post"></div>
-<% end %>
-```
 
 ##### 演示 YAML 文件
 
@@ -139,23 +125,11 @@ zh-CN:
 
 ### 视频插入
 
-目前支持 Youtube 和 Youku 两家的视频插入，你只需要复制视频播放页面，浏览器地址栏的网页 URL 地址，并粘贴到话题／回复文本框，提交以后将自动转换成视频播放器。
+目前支持 BiliBili 的视频插入，你只需要复制视频播放页面，浏览器地址栏的网页 URL 地址，并粘贴到话题／回复文本框，提交以后将自动转换成视频播放器。
 
 #### 例如
-
-**Youtube**
-
-https://www.youtube.com/watch?v=52AMJwF7P0w
-
-**Vimeo**
-
-https://vimeo.com/460511888
-
-**Youku**
-
-https://v.youku.com/v_show/id_XNDU4Mzg4Mjc2OA==.html
 
 **BiliBili**
 
 https://www.bilibili.com/video/BV1uv411B7MK
-···
+
