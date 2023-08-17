@@ -42,6 +42,7 @@ class Setting < RailsSettings::Base
     wiki_sidebar_html
     site_index_html
     topic_index_sidebar_html
+    topic_index_nav_html
     after_topic_html
     before_topic_html
     node_ids_hide_in_topics_index
@@ -126,6 +127,7 @@ class Setting < RailsSettings::Base
     field :wiki_sidebar_html, default: ""
     field :site_index_html, default: ""
     field :topic_index_sidebar_html, default: ""
+    field :topic_index_nav_html, default: ""
     field :before_topic_html, default: ""
     field :after_topic_html, default: ""
     field :ban_reasons, default: "标题或正文描述不清楚", type: :array, separator: /\n+/
