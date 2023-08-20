@@ -105,6 +105,7 @@ en:
     edit_reply: Edit Reply
     delete_reply_success: Delete successfully.
     topic_location: Replied to
+    limit_time_error: Only in 2h can edit reply.
   photos:
     upload_and_insert_code: Upload and insert code
     uploading: Uploading

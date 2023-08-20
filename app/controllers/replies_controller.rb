@@ -41,6 +41,10 @@ class RepliesController < ApplicationController
   end
 
   def edit
+    return if current_user.admin?
+    if (Setting.topic_delete_second.to_i > 0 && @reply.created_at.to_i + Setting.topic_delete_second.to_i < Time.now.to_i)
+      redirect_to(topic_path(@reply.topic_id), alert: t("reply.limit_time_error"))
+    end
   end
 
   def update
