@@ -19,7 +19,7 @@
 
 ### 换行
 
-两个空格+回车 或 使用br标签
+两个空格+回车 或 使用 br 标签
 
 ### 提及用户
 
@@ -131,5 +131,4 @@ zh-CN:
 
 **BiliBili**
 
-https://www.bilibili.com/video/BV1uv411B7MK
-
+https://www.bilibili.com/video/BV18V411W7z7
