@@ -20,6 +20,10 @@ class ReplyComponent < ApplicationComponent
     reply.deleted? && !@show_raw
   end
 
+  def owner?
+    @reply.user_id == @topic.user_id
+  end
+
   def floor
     @floor ||= @reply_counter
   end

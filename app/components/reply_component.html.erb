@@ -13,6 +13,9 @@
               <%= user_name_tag(reply.user) %>
             </span>
             <span class="sub-info">
+              <% if owner? %>
+                <span style="font-size: .8em;"><i class="fa-solid fa-square-caret-up"></i></span>
+              <% end %>
               <span class='floor'>#<%= floor %></span>
               <a class="time" href="#reply-<%= reply.id %>"><%= timeago(reply.created_at) %></a>
             </span>
