@@ -2,7 +2,9 @@
 
 redis_config = Rails.application.config_for(:redis)
 RuCaptcha.configure do
-  self.length = 3
+  self.length = 4
+  self.line = false
+  self.noise = false
   self.cache_store = [:redis_cache_store, {namespace: "rucaptcha", url: redis_config["url"], expires_in: 1.day}]
 end
 
