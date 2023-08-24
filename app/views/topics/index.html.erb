@@ -6,7 +6,7 @@
 <%= render "topics/node_info", node: @node %>
 <div class="flex flex-col sm:flex-row gap-4">
   <div class="grow">
-    <div class="topics topics-<%= action_name %> card   <% if !Setting.topic_index_nav_html.empty? %> mt-2 md:mt-0 <% end %>">
+    <div class="topics topics-<%= action_name %> card   <% if !Setting.topic_index_nav_html.empty? %> mt-2 mt-md-0 <% end %>">
       <% if @node.blank? %>
         <%= raw Setting.topic_index_nav_html %>
       <% end %>

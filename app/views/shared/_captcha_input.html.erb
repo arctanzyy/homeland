@@ -4,7 +4,7 @@
   <% else %>
     <%= rucaptcha_input_tag(class: 'form-control', placeholder: t('common.captcha')) %>
     <div class="input-group-captcha">
-      <span class="input-group-text" style="background: #fff; padding: 1px;">
+      <span class="input-group-text" style="background: #fff; padding: 1px; border-radius: 0 .25rem .25rem 0">
         <a class="rucaptcha-image-box" href="#"><%= rucaptcha_image_tag %></a>
       </span>
     </div>
